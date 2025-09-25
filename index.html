@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ThinkMyThought — Coming Soon</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="ThinkMyThought — An exclusive platform for thinkers, innovators, and visionaries. Early access is limited to the first 50 — by invitation only." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Social share -->
+  <meta property="og:title" content="ThinkMyThought — Coming Soon" />
+  <meta property="og:description" content="Early access is limited to the first 50 — by invitation only." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" /> <!-- Optional: add absolute URL to a preview image -->
+  <meta property="og:url" content="" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ThinkMyThought — Coming Soon" />
+  <meta name="twitter:description" content="Early access is limited to the first 50 — by invitation only." />
+  <meta name="twitter:image" content="" />
+
+  <style>
+    :root{
+      --bg1:#0b1420; --bg2:#16293d; --text:#f6f7fb; --muted:#c8d1dc; --btn:#ffffff; --btnText:#0d1723; --btnHover:#e6e9ef;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background: radial-gradient(1200px 800px at 20% 10%, #1f3550 0%, rgba(31,53,80,0) 60%),
+                  linear-gradient(135deg, var(--bg1) 0%, var(--bg2) 100%);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .container{
+      width:100%; max-width:980px; padding:24px;
+    }
+    .card{
+      padding: clamp(28px, 6vw, 56px);
+      border-radius: 20px;
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+      text-align:center;
+    }
+    h1{
+      margin:0 0 14px; font-size: clamp(34px, 6vw, 64px); line-height:1.1; letter-spacing:-0.02em;
+    }
+    p.lead{
+      margin:10px auto 18px; max-width: 44ch; font-size: clamp(16px, 2.5vw, 20px); color:var(--muted);
+    }
+    .divider{
+      width: 80px; height:1px; background: rgba(255,255,255,0.2);
+      margin: 16px auto 20px;
+    }
+    .cta{
+      display:inline-block;
+      padding:14px 22px;
+      border-radius: 12px;
+      background: var(--btn);
+      color: var(--btnText);
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .08s ease, background .2s ease, box-shadow .2s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    .cta:hover{ background: var(--btnHover); transform: translateY(-1px) }
+    .cta:active{ transform: translateY(0) }
+
+    .foot{
+      margin-top:24px; font-size:14px; color:var(--muted);
+    }
+    .foot a{ color:#cfe3ff; text-decoration:none }
+    .foot a:hover{ text-decoration:underline }
+
+    /* Accessibility prefers-reduced-motion */
+    @media (prefers-reduced-motion:no-preference){
+      .glow{
+        position: absolute; inset: 0; overflow: hidden; pointer-events:none;
+      }
+      .glow::before{
+        content:""; position:absolute; width:600px; height:600px; border-radius:50%;
+        background: radial-gradient(closest-side, rgba(46, 130, 255, .18), rgba(46,130,255,0));
+        top:-120px; right:-120px; filter: blur(10px);
+        animation: float 12s ease-in-out infinite alternate;
+      }
+      @keyframes float{
+        0%{ transform: translateY(0) translateX(0) }
+        100%{ transform: translateY(20px) translateX(-20px) }
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+  <main class="container">
+    <section class="card" role="region" aria-label="Coming soon announcement">
+      <h1>ThinkMyThought</h1>
+      <p class="lead"><em>An exclusive platform for thinkers, innovators, and visionaries.</em></p>
+      <p class="lead">Early access is <strong>limited to the first 50</strong> — by invitation only.</p>
+      <div class="divider" aria-hidden="true"></div>
+      <p class="lead"><strong>Coming soon — be the first to know.</strong></p>
+
+      <!-- Replace the href below with your Google Form link -->
+      <p style="margin-top:18px">
+        <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSehWzH2MtpFh5lKI_5cXyWVTKaZggDwBN5LE76YoO-Uet309w/viewform" target="_blank" rel="noopener">Join Invitation Waitlist</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
